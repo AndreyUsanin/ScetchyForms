@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Sketchy Starter</title>
+  <script src="https://horprogs.github.io/Just-validate/dist/js/just-validate.min.js"></script>
 </head>
 
 <body>
@@ -14,9 +15,9 @@
   <div class="container">
     <div class="row my-4">
       <div class="col-sm-6">
-        <form id="form-a" class="form-a"  novalidate method="post">
-          <div class="formbox">
-            <input type="text" placeholder="Name" class="form-a__input" required data-pristine-required-message="Имя назови, пидор">
+        <form  class="form-a">
+          <div class="formbox form-group">
+            <input type="text" placeholder="Name" class="form-a__input form-control" data-validate-field="name" name="name" id="name">
           </div>
           <div class="formbox">
             <input type="email" placeholder="Email" class="form-a__input" required data-pristine-required-message="А емэйл где, блять">
@@ -30,6 +31,7 @@
     </div>
   </div>
 
+<!-- just validate -->
 
 
 </body>
