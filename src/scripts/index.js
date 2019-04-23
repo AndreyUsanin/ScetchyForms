@@ -35,7 +35,7 @@ window.onload = function () {
 
   var form = document.getElementById("form-a");
 
-  var pristine = new Pristine(form, myConfig, false);
+  var pristine = new Pristine(form, myConfig, true);
 
   form.addEventListener('submit', function (e) {
 
