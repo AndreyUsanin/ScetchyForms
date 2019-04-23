@@ -4,8 +4,90 @@
 @import "typography";
 @import "btn";
 
-
-
 body {
-  background: $white;
+  background: $light-gray;
+}
+
+.formbox {
+  margin-bottom: 1rem;
+}
+
+.form-a {
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    transition: border ease-in .1s;
+    color: $dark-gray;
+
+    
+  &.is-valid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: ms(0);
+    background-position: center right 1rem;
+  }
+
+    &:focus, &:active {
+      border: 1px solid $dark-gray;
+      outline: none;
+    }
+  }
+}
+
+
+
+
+// pristine css
+
+.form-container {
+    margin: 80px auto;
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.form-group .form-control {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border: none;
+    background: #d1d1d1;
+    border-bottom: 2px solid #1c94ff;
+    font-size: 16px;
+}
+
+.has-success .form-a__input {
+    border: 1px solid #168b3f;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: ms(0);
+    background-position: center right 1rem;
+}
+
+.has-danger .form-a__input {
+    border: 1px solid #dc1d34;
+}
+
+.formbox .text-help {
+    color: #dc1d34;
+}
+
+.inline-label label{
+    display: inline;
+}
+
+.pristine-error {
+    display: table;
 }

@@ -12,29 +12,26 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Scetchy Cards</h1>
+    <div class="row my-4">
+      <div class="col-sm-6">
+        <form id="form-a" class="form-a"  novalidate method="post">
+          <div class="formbox">
+            <input type="text" placeholder="Name" class="form-a__input" required data-pristine-required-message="Имя назови, пидор">
+          </div>
+          <div class="formbox">
+            <input type="email" placeholder="Email" class="form-a__input" required data-pristine-required-message="А емэйл где, блять">
+          </div>
+          <div class="formbox">
+            <input type="password" placeholder="Password" class="form-a__input" required>
+          </div>
+          <input type="submit" class="btn btn--hollow" value="Отправить" />
+        </form>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Generic Stuff</h1>
-      </div>
-      <div class="col-sm-12">
-        <a href="#" class="btn">Generic</a>
-        <a href="#" class="btn" disabled>Disabled</a>
-        <a href="#" class="btn btn--light">Light</a>
-        <a href="#" class="btn btn--light" disabled>Disabled</a>
-        <a href="#" class="btn btn--hollow">Hollow</a>
-        <a href="#" class="btn btn--hollow" disabled>Disbaled</a>
-      </div>
-    </div>
 
-  </div>
+
 
 </body>
 
