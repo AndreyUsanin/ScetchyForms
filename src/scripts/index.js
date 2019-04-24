@@ -1,36 +1,7 @@
-<<<<<<< HEAD
-import '../styles/index.scss';
-
-
-=======
 import "../styles/index.scss";
 let Pristine = require("pristinejs");
->>>>>>> prestine
 
 
-<<<<<<< HEAD
-new JustValidate('.form-a', {
-  messages: {
-    name: {
-      minLength: 'My custom message about only minLength rule'
-    },
-    email: 'My custom message about error (one error message for all rules)'
-  },
-
-  submitHandler: function (form, values, ajax) {
-
-    ajax({
-      url: 'https://just-validate-api.herokuapp.com/submit',
-      method: 'POST',
-      data: values,
-      async: true,
-      callback: function(response)  {
-        console.log(response);
-      }
-    });
-  },
-});
-=======
 let myConfig = {
   // class of the parent element where the error/success class is added
   classTo: "formbox",
@@ -61,4 +32,3 @@ window.onload = function() {
     }
   });
 };
->>>>>>> prestine

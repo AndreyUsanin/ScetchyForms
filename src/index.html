@@ -15,29 +15,35 @@
   <div class="container">
     <div class="row my-4">
       <div class="col-sm-6">
-<<<<<<< HEAD
-        <form  class="form-a">
-          <div class="formbox form-group">
-            <input type="text" placeholder="Name" class="form-a__input form-control" data-validate-field="name" name="name" id="name">
-=======
         <form id="form-a" class="form-a" novalidate method="post">
           <div class="formbox">
-            <input type="text" autofill="no" placeholder="Name" class="form-a__input" required data-pristine-required-message="Имя назови, пидор">
->>>>>>> prestine
+            <input type="text" autofill="no" placeholder="Name" class="form-a__input" required>
           </div>
           <div class="formbox">
-            <input type="email" placeholder="Email" class="form-a__input"  data-validate-field="email" name="email" id="email">
+            <input type="email" placeholder="Email" class="form-a__input" required data-validate-field="email"
+              name="email" id="email">
           </div>
           <div class="formbox">
             <input type="password" placeholder="Password" class="form-a__input" required>
           </div>
-          <input type="submit" class="btn btn--hollow" value="Отправить" />
+          <div class="formbox">
+            <select class="form-a__input">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="formbox">
+            <textarea placeholder="Message" rows="3" class="form-a__input" required></textarea>
+          </div>
+          <input type="submit" class="btn btn--hollow form-a__btn" value="Отправить" />
         </form>
       </div>
     </div>
   </div>
 
-<!-- just validate -->
 
 
 </body>
