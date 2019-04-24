@@ -15,19 +15,39 @@
   <div class="container">
     <div class="row my-4">
       <div class="col-sm-6">
-        <form id="form-a" class="form-a" novalidate method="post">
+
+        <form id="form-b" class="form-b" novalidate method="post">
+
           <div class="formbox">
-            <input type="text" autofill="no" placeholder="Name" class="form-a__input" required>
+            <div class="form-b__group">
+              <div class="form-b__prep">
+                <i class="far fa-user"></i>
+              </div>
+              <input type="text" autofill="no" placeholder="Name" class="form-b__input form-b__input--prep" required>
+            </div>
           </div>
+
           <div class="formbox">
-            <input type="email" placeholder="Email" class="form-a__input" required data-validate-field="email"
-              name="email" id="email">
+            <div class="form-b__group">
+              <div class="form-b__prep">
+                <i class="far fa-envelope"></i>
+              </div>
+              <input type="email" placeholder="Email" class="form-b__input form-b__input--prep" required data-validate-field="email"
+                name="email" id="email">
+            </div>
           </div>
+
           <div class="formbox">
-            <input type="password" placeholder="Password" class="form-a__input" required>
+            <div class="form-b__group">
+              <div class="form-b__prep">
+                <i class="fas fa-key"></i>
+              </div>
+              <input type="password" placeholder="Password" class="form-b__input form-b__input--prep" required>
+            </div>
           </div>
+
           <div class="formbox">
-            <select class="form-a__input">
+            <select class="form-b__input">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -36,9 +56,9 @@
             </select>
           </div>
           <div class="formbox">
-            <textarea placeholder="Message" rows="3" class="form-a__input" required></textarea>
+            <textarea placeholder="Message" rows="3" class="form-b__input" required></textarea>
           </div>
-          <input type="submit" class="btn btn--hollow form-a__btn" value="Отправить" />
+          <input type="submit" class="btn btn--hollow form-b__btn" value="Отправить" />
         </form>
       </div>
     </div>

@@ -16,7 +16,7 @@ let myConfig = {
 };
 
 window.onload = function() {
-  var form = document.getElementById("form-a");
+  var form = document.getElementById("form-b");
 
   var pristine = new Pristine(form, myConfig, true);
 
